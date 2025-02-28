@@ -3,9 +3,8 @@ from config import Development,Build
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
-
 app = Flask(__name__)
-app.config.from_object(Development)
+app.config.from_object(Build)
 mongo = PyMongo(app)
 
 
